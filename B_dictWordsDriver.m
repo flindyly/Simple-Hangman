@@ -1,0 +1,1 @@
+dictWords("hangmanDictEasy.txt") % should output a 1x50 string array

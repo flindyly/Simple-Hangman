@@ -1,0 +1,34 @@
+Issues encountered:
+
+1) when entering the same correctly guessed letter(s) multiple times, program continues adding all of these repeated correct letters to the vector
+	- The length of the correctLetters vector is used to check when user has correctly guessed all letters of the word
+	- Since it keeps adding letters already guessed, a 'Congratulations' message is displayed when length of vector matches length of the word,
+	even though all letters have not been correctly guessed
+
+	TEST EXAMPLE:
+	Word: zigzag (length = 6)
+	
+	Guess 1: z
+	z--z--
+	correctLetters = [z z]
+
+	Guess 2: z
+	z--z--
+	correctLetters = [z z z z]
+
+	Guess 3: z
+	z--z--
+	correctLetters = [z z z z z z] --> length=6
+	Congratulations, you've correctly guessed the word!
+
+2) Similar issue as above, but for incorrectly guessed letters (both are fixed in checkGuessPt2)
+
+3) When user inputs special characters or space, lives decrease and guesses increase (fixed using checkInput function)
+
+4) Hangman parts are only shown when user guesses a wrong letter, but hangman does not show when user guesses correct 
+(fixed by calling function in both conditions - see line 66 of displayHangman script)
+
+5) When doing the above, whole hangman picture appears after first guess
+(fixed in showHangman function by making switch statement display empty array)
+
+	

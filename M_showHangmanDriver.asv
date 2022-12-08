@@ -1,0 +1,9 @@
+disp(showHangman(10)); 
+
+disp(showHangman(9));
+
+disp(showHangman(8));
+
+disp(showHangman(5));
+
+disp(showHangman(0));
