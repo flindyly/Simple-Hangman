@@ -6,4 +6,4 @@ A simple, single-player command line hangman game for guessing dictionary words.
 The game offers two modes of difficulty - easy or hard - with the number of lives currently fixed at 10. Tested against invalid inputs.
 
 ## How to Run
-Run the 'hangmanFinal' file in MATLAB.
+Run the 'MAIN' file in MATLAB.
